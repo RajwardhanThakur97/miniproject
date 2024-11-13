@@ -1,0 +1,139 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('bg3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+  
+  header {
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+  }
+  
+  .movies {
+    text-align: center;
+    margin: 20px 0;
+    animation: fadeInUp 2s ease-in-out;
+  }
+  
+  .movie-gallery {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .movie-gallery img {
+    width: 150px;
+    height: 220px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .movie-gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+  }
+  
+  .form-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    animation: slideIn 2s ease;
+  }
+  
+  form label {
+    font-size: 1rem;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn {
+    background: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .book-btn {
+    background-color: #4caf50;
+  }
+  
+  .exit-btn {
+    background-color: #d9534f;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  
+  #output {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #confirmationMessage {
+    font-size: 1.2rem;
+    color: #fff;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideIn {
+    0% { opacity: 0; transform: translateX(-100px); }
+    100% { opacity: 1; transform: translateX(0); }
+  }

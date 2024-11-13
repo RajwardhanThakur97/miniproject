@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unique Movie Ticket Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="overlay"></div>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Movie Ticket Booking</h1>
+    <p>Choose your movie and enjoy the show!</p>
+  </header>
+
+  <!-- Available Movies Section -->
+  <section class="movies">
+    <h2>Available Movies</h2>
+    <div class="movie-gallery">
+      <img src="1.jpg" alt="Movie 1">
+      <img src="2.jpg" alt="Movie 2">
+      <img src="3.jpg" alt="Movie 3">
+      <img src="4.jpg" alt="Movie 4">
+    </div>
+  </section>
+
+  <!-- Booking Form Section -->
+  <main>
+    <div class="form-container">
+      <form id="bookingForm">
+        <label for="movieNumber">Movie Number:</label>
+        <input type="number" id="movieNumber" min="1" max="4" required>
+
+        <label for="numTickets">Number of Tickets:</label>
+        <input type="number" id="numTickets" min="1" required>
+
+        <label for="rowNumber">Row Number:</label>
+        <input type="number" id="rowNumber" min="1" required>
+
+        <label for="seatNumber">Seat Number:</label>
+        <input type="number" id="seatNumber" min="1" required>
+
+        <div class="button-group">
+          <button type="button" class="btn book-btn" onclick="bookTickets()">Book Now</button>
+          <button type="button" class="btn exit-btn" onclick="exitProgram()">Exit</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- Output Section -->
+  <div id="output">
+    <p id="confirmationMessage">Your ticket details will appear here.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
